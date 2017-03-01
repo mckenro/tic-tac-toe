@@ -1,0 +1,13 @@
+.grid{
+  border: 1px solid black;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+
+
+}
+.grid h1{
+    font-size: 150px;
+    position:absolute;
+    padding-left: 30px;
+}
