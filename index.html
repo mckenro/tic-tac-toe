@@ -12,6 +12,20 @@
       <div id="master-row" class="row">
         <div id="tally" class="col-xs-4">
           <h1>Scoreboard</h1>
+          <form class="form">
+            <div class="radio">
+              <label for="onePlayerGame">
+              <input type="radio" name="playerSelect" value=1>
+              Player 1 vs. Computer
+              </label>
+            </div>
+            <div class="radio">
+              <label for="twoPlayerGame">
+              <input type="radio" name="playerSelect" value=2>
+              Player 1 vs. Player 2
+              </label>
+            </div>
+          </form>
           <h2>Player 1</h2>
           <h3>Score:<span id="play1Tally"></span>
           <h2>Player 2</h2>
@@ -54,20 +68,6 @@
         </div>
       </div>
       </div><!--end master row-->
-      <form class="form">
-        <div class="radio">
-          <label for="onePlayerGame">
-          <input type="radio" name="playerSelect" value=1>
-          Player 1 vs. Computer
-          </label>
-        </div>
-        <div class="radio">
-          <label for="twoPlayerGame">
-          <input type="radio" name="playerSelect" value=2>
-          Player 1 vs. Player 2
-          </label>
-        </div>
-      </form>
     </div><!--end container-->
   </body>
 </html>
