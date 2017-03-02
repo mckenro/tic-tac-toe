@@ -51,7 +51,6 @@ Grid.prototype.winner = function(){
     };
 };
 
-
 function Turn (character, clickCounter1){
   this.character = character;
   this.clickCounter1 = clickCounter1;
@@ -75,65 +74,74 @@ Turn.prototype.clickCounter = function(){
 $(document).ready(function(){
   $("#a1").click(function(event){
     event.preventDefault();
-    $("#A1").text(player1.clickCounter());
-    console.log(player1.clickCounter());
-    win.a1 = player1.clickCounter();
+    var result = player1.clickCounter();
+    $("#A1").text(result);
+    win.a1 = result;
     win.winner();
+    $("#a1").unbind("click");
   });
   $("#b1").click(function(event){
     event.preventDefault();
-    $("#B1").text(player1.clickCounter());
-    console.log(player1.clickCounter());
-    win.b1 = player1.clickCounter();
+    var result = player1.clickCounter();
+    $("#B1").text(result);
+    win.b1 = result;
     win.winner();
+    $("#b1").unbind("click");
   });
   $("#c1").click(function(event){
     event.preventDefault();
-    $("#C1").text(player1.clickCounter());
-    console.log(player1.clickCounter());
-    win.c1 = player1.clickCounter();
+    var result = player1.clickCounter();
+    $("#C1").text(result);
+    win.c1 = result;
     win.winner();
+    $("#c1").unbind("click");
   });
   $("#a2").click(function(event){
     event.preventDefault();
-    $("#A2").text(player1.clickCounter());
-    console.log(player1.clickCounter());
-    win.a2 = player1.clickCounter();
+    var result = player1.clickCounter();
+    $("#A2").text(result);
+    win.a2 = result;
     win.winner();
+    $("#a2").unbind("click");
   });
   $("#b2").click(function(event){
     event.preventDefault();
-    $("#B2").text(player1.clickCounter());
-    console.log(player1.clickCounter());
-    win.b2 = player1.clickCounter();
+    var result = player1.clickCounter();
+    $("#B2").text(result);
+    win.b2 = result;
     win.winner();
+    $("#b2").unbind("click");
   });
   $("#c2").click(function(event){
     event.preventDefault();
-    $("#C2").text(player1.clickCounter());
-    console.log(player1.clickCounter());
-    win.c2 = player1.clickCounter();
+    var result = player1.clickCounter();
+    $("#C2").text(result);
+    win.c2 = result;
     win.winner();
+    $("#c2").unbind("click");
   });
   $("#a3").click(function(event){
     event.preventDefault();
-    $("#A3").text(player1.clickCounter());
-    console.log(player1.clickCounter());
-    win.a3 = player1.clickCounter();
+    var result = player1.clickCounter();
+    $("#A3").text(result);
+    win.a3 = result;
     win.winner();
+    $("#a3").unbind("click");
   });
   $("#b3").click(function(event){
     event.preventDefault();
-    $("#B3").text(player1.clickCounter());
-    console.log(player1.clickCounter());
-    win.b3 = player1.clickCounter();
+    var result = player1.clickCounter();
+    $("#B3").text(result);
+    win.b3 = result;
     win.winner();
+    $("#b3").unbind("click");
   });
   $("#c3").click(function(event){
     event.preventDefault();
-    $("#C3").text(player1.clickCounter());
-    console.log(player1.clickCounter());
-    win.c3 = player1.clickCounter();
+    var result = player1.clickCounter();
+    $("#C3").text(result);
+    win.c3 = result;
     win.winner();
+    $("#c3").unbind("click");
   });
 });
