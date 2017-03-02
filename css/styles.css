@@ -1,3 +1,14 @@
+@media (min-width: 1px) {
+  .container {
+    width: 970px;
+  }
+}
+
+#tally {
+  float: right;
+
+}
+
 .grid{
   border: 1px solid black;
   text-align: center;
