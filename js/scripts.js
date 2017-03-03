@@ -22,7 +22,7 @@ var resetGrid = new Grid("","","","","","","","","");
 var playerGameTally = new Tally();
 
 Grid.prototype.reset = function(){
-  $("#A1, #B1, #C1, #A2, #B2, #C2, #A3, #B3, #C3").replaceWith("","","","","","","","","");
+  $("h1#A1, #B1, #C1, #A2, #B2, #C2, #A3, #B3, #C3").empty();
   return (this.a1 = "", this.b1 = "", this.c1 = "", this.a2 = "", this.b2 = "", this.c2 = "", this.a3 = "", this.b3 = "", this.c3 = "");
 };
 
@@ -97,6 +97,7 @@ Grid.prototype.winner = function(){
       alert("Cat's Game!")
       win.reset();
     };
+    console.log(win);
 };
 
 function Turn (character, clickCounter1){
@@ -104,24 +105,16 @@ function Turn (character, clickCounter1){
   this.clickCounter1 = clickCounter1;
 };
 
-
-
 var player1 = new Turn("X", 0);
 var player2 = new Turn("O", 1);
 
-
-
 newGrid = ["A1","B1","C1","A2","B2","C2","A3","B3","C3"];
-
 
 var computerChoice = function(){
   var nRandom = Math.floor(Math.random() * (newGrid.length)),
   mElement = newGrid[nRandom];
    $("#" + mElement + "").text("O")
 };
-
-
-
 
 var gameTypeToggle = function(gameType){
 if(gameType === 2){
@@ -161,8 +154,8 @@ if(gameType === 2){
 //         }
 //     };
 // }
-//frontend
 
+//frontend
 $(document).ready(function(){
   $("#a1").click(function(event){
     event.preventDefault();
